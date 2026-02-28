@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de Aposentadoria</title>
+</head>
+<body class="window">
+    <script src="script.js"></script>
+    <div class="div">
+        <h1>Calculadora de Aposentadoria</h1>
+        <fieldset class="fieldset">
+            <legend>Gênero</legend>
+
+            <label>
+                <input type="radio" name="gender" value="male" class="input">Masculino
+            </label>
+
+            <label class="label">
+                <input type="radio" name="gender" value="female" class="input">Feminino
+            </label>
+            <p class="label">Caso seja não binário, selecione o gênero que nasceu</p>
+        </fieldset>
+        <fieldset class="fieldset">
+            <legend class="label">Idade de Contribuição</legend>
+            <label class="label">
+                <input type="number" name="age" class="input">Anos de Contribuição
+            </label>
+        </fieldset>
+        <fieldset class="fieldset">
+            <legend class="label">Média Salárial</legend>
+            <label class="label">
+                <input type="number" name="salary" class="input">Salário Médio pela Contribuição
+            </label>
+        </fieldset>
+        <button type="button" onclick="calcular()" class="button">Calcular Aposentadoria</button>
+        <p class="label" id="result"></p>
+    </div>
+</body>
+</html>
